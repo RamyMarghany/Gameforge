@@ -4,8 +4,8 @@ import{CardContainer, Info, MainInfo} from './style.css'
 const Card = props =>{
     return(
         <CardContainer>
-            <Info><MainInfo>name: </MainInfo>{props.name}</Info>
-            <Info><MainInfo>email: </MainInfo>{props.email}</Info>
+            <Info><MainInfo>{props.firstLabel} </MainInfo>{props.mainInfo}</Info>
+            <Info><MainInfo>{props.secondLabel}</MainInfo>{props.secondaryInfo}</Info>
         </CardContainer>        
     )
 }

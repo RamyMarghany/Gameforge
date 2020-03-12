@@ -1,6 +1,5 @@
 import React from 'react'
-import Dropdown from '../dropdown-menu/dropdown'
-// import DropdownItem from '../../common/dropdown-menu/dropdown-item'
+import Dropdown from '../dropdown'
 import{HeaderContainer, HeaderWrapper, Logo} from './style.css'
 
 const Header = () => {
