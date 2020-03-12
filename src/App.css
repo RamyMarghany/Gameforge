@@ -1,0 +1,24 @@
+html,body{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* whole tab & tabs container class */
+
+
+
+/* single tab class */
+.tab {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* active tab class */
+
+
