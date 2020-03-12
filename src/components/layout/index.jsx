@@ -1,79 +1,36 @@
 import React, {useState, useEffect} from 'react';
 import {BodyWrapper} from './style.css'
 import TabController from '../tab'
-import Acc from '../acc'
+import Accordion from '../accordion'
+import FetchingData from '../../utility/fetching'
 
 const Wrapper = () => {
 
     const [posts, setPosts] = useState([]);
     const [albums, setAlbums] = useState([]);
     const [comments, setComments] = useState([]);
-
-    useEffect(()=>{
-        fetch(
-            "https://jsonplaceholder.typicode.com/posts"
-        )
-        .then(res=>{
-            if(res.ok){
-                return res.json()
-            }
-            else {
-                throw new Error("something went wrong!");
-            }
-        })
-        .then(res=>{
-            setPosts(res)
-        })
-
-        fetch(
-            "https://jsonplaceholder.typicode.com/albums"
-        )
-        .then(res=>{
-            if(res.ok){
-                return res.json()
-            }
-            else {
-                throw new Error("something went wrong!");
-            }
-        })
-        .then(res=>{
-            setAlbums(res)
-        })
-
-        fetch(
-            "https://jsonplaceholder.typicode.com/comments"
-        )
-        .then(res=>{
-            if(res.ok){
-                return res.json()
-            }
-            else {
-                throw new Error("something went wrong!");
-            }
-        })
-        .then(res=>{
-            setComments(res)
-        })
-        
+    
+    useEffect( () => {
+        FetchingData('https://jsonplaceholder.typicode.com/posts', setPosts)
+        FetchingData('https://jsonplaceholder.typicode.com/albums', setAlbums)
+        FetchingData('https://jsonplaceholder.typicode.com/comments', setComments)
     },[])
 
     return(
         <BodyWrapper>
             <TabController/>
-            <Acc 
-                title='Post'
+            <Accordion            title='Post'
                 body={
-                    posts.map((post, index)=>{
+                    posts.slice(0,10).map((post, index)=>{
                         return(
                             <p key={index}>{post.body}</p>  
                         )
                     })
                 }
             />
-            <Acc 
-                title='Albums'
+            <Accordion            title='Albums'
                 body={
-                    albums.map((album, index)=>{
+                    albums.slice(0,10).map((album, index)=>{
                         return(
                             <p key={index}>{album.title}</p>  
                         )
@@ -81,10 +38,9 @@ const Wrapper = () => {
                 }
             />
 
-            <Acc 
-                title='Comments'
+            <Accordion            title='Comments'
                 body={
-                    comments.map((comment, index)=>{
+                    comments.slice(0,10).map((comment, index)=>{
                         return(
                             <p key={index}>{comment.body}</p>  
                         )

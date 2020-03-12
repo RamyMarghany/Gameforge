@@ -7,6 +7,10 @@ export const TabContainer = styled.section`
     border-radius: 5px;
     border: 1px solid #aaa;
     box-shadow: 2px 2px 13px -1px rgba(0, 0, 0, 0.75);
+
+    @media(max-width:567px){
+        box-shadow:none;
+    }
 `
 
 export const TabsButtonsWrapper = styled.div`
@@ -42,6 +46,15 @@ export const TabsButton = styled.button`
     &:focus{
         outline:none;
     }
+
+    //for small mobile
+    @media(max-width:576px){
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        margin: 0;
+        padding: 15px;
+    }
 `
 
 export const TabsContent = styled.div`
@@ -56,6 +69,11 @@ export const TabLayout = styled.div`
         column-gap: 10px;
         row-gap: 10px;
     }
+`
+
+export const Loading = styled.p`
+    grid-column: 1/4;
+    color:red;
 `
 
 

@@ -1,32 +1,20 @@
 import styled from 'styled-components/macro'
 
-export const AccordionWrapper = styled.div`
-  border: 1px solid #cecece;
-  position: relative;
+export const AccordionTitle = styled.div`    
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    cursor:pointer;
 `
-export const AccordionTitle = styled.div`
-      
-      position: relative;
-      cursor: pointer;
-      transition: all 0.05s ease-in-out;
-
-      span {
-        cursor: pointer;
-      }
-
-      svg {
-        float: right;
-      }
-
-    
-    `
-
-
 export const AccordionBody = styled.div`
-    
-      transition: all 0.05s ease-in-out;
+    height: 0;
+    overflow: hidden;
+    background: #eaeaea;
 
-      & > a {
-        text-decoration: none;
-      }
-    `
+    &.active{
+        border: 1px solid #ccc;
+        padding: 20px;
+        height:auto;
+    }
+
+`

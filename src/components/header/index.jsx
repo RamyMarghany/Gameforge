@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-          <Logo href="#">Logo</Logo>
+          <Logo href="#">Gameforge</Logo>
           <Dropdown/>
       </HeaderWrapper>
     </HeaderContainer>

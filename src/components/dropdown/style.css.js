@@ -8,9 +8,17 @@ export const DropdownContainer = styled.div`
     cursor:pointer;
     background:#fff;
     width:6em;
+
     //for tablets and desktops
-    @media(min-width:768px){
+    @media(min-width:576px){
         justify-self: end;
+        margin-right: 2.5em;
+    }
+
+    //for mobile
+    @media(max-width:576px){
+        justify-self: center;
+        margin-top:1em;
     }
 `
 

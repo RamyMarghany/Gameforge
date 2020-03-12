@@ -1,29 +1,15 @@
-import React, { useState } from 'react'
-import { AccordionWrapper, AccordionTitle, AccordionBody } from './style.css'
+import React, {useState} from 'react';
+import{AccordionBody, AccordionTitle} from './style.css'
 
-const CustomAccordion = props => {
-  const [showBody, setShowBody] = useState(false)
-
-  return (
-    <AccordionWrapper>
-      <AccordionTitle
-        isOpened={showBody}
-        onClick={() => setShowBody(!showBody)}
-        className={showBody && 'isOpen'}
-      >
-        <span>{props.accordionTitle}</span>
-        {!showBody ? '+' : '-'}
-      </AccordionTitle>
-      {showBody && (
-        <AccordionBody
-          dangerouslySetInnerHTML={{
-            __html: props.accordionBody
-          }}
-          visible={showBody}
-        ></AccordionBody>
-      )}
-    </AccordionWrapper>
-  )
+const Accordion = (props) =>{
+    const [open, setOpen] = useState(false);
+    
+    return(
+        <div className="accordion-container">
+            <AccordionTitle className="accordion-title" onClick={e=>setOpen(!open)}>{props.title}</AccordionTitle>
+            <AccordionBody className={open ? "accordion-body active" : "accordion-body"}>{props.body}</AccordionBody>
+        </div>
+    )
 }
 
-export default CustomAccordion
+export default Accordion
