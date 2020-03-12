@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const HeaderContainer = styled.div`
-    background:red;
+    background:#165C75;
     padding:20px;
     position: fixed;
     width: 100%;
@@ -21,13 +21,13 @@ export const HeaderWrapper = styled.div`
 `
 
 export const Logo = styled.a`
-   color:#fff;
+   color:#E1A020;
    font-size:1.2em;
    text-decoration: none;
    align-self: center;
    &:hover{
         text-decoration: none;
-        color:#fff;
+        color:#DA5D2A;
    }
    
    //for tablet and desktop

@@ -6,7 +6,7 @@ const Accordion = (props) =>{
     
     return(
         <div className="accordion-container">
-            <AccordionTitle className="accordion-title" onClick={e=>setOpen(!open)}>{props.title}</AccordionTitle>
+            <AccordionTitle className={open ? "accordion-title expanded" : "accordion-title"} onClick={e=>setOpen(!open)}>{props.title}</AccordionTitle>
             <AccordionBody className={open ? "accordion-body active" : "accordion-body"}>{props.body}</AccordionBody>
         </div>
     )

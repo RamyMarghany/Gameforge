@@ -24,23 +24,24 @@ export const TabsButton = styled.button`
     padding: 10px 26px;
     -webkit-transition: 0.3s all ease-in;
     transition: 0.3s all ease-in;
-    background: #efefef;
+    background: #215c75;
     border-right: 1px solid #a0a0a0;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border: 1px #ccc solid;
+    color: #E1A020;
 
     &.btnActive{
-        background: #fff;
-        color:red;
-        border-bottom: 2px solid red;
+        background: #33222e;
+        color: #da5d2a;
+        border-bottom: 3px solid #da5d2a;
     }
 
     &:hover{
-        color:red;
-        background: #fff;
+        color:#da5d2a;
+        background: #33222e;
         cursor: pointer;
-        border-bottom: 2px solid red;
+        border-bottom: 3px solid #da5d2a;
     }
 
     &:focus{
@@ -68,12 +69,13 @@ export const TabLayout = styled.div`
         padding: 20px;
         column-gap: 10px;
         row-gap: 10px;
+        background:#fff;
     }
 `
 
 export const Loading = styled.p`
     grid-column: 1/4;
-    color:red;
+    color:#da5d31;
 `
 
 

@@ -6,8 +6,14 @@ export const DropdownContainer = styled.div`
     border-radius: 4px;
     position:relative;
     cursor:pointer;
-    background:#fff;
+    background:#edecf1;
     width:6em;
+    transition: 0.2s all ease-in-out;
+
+    &:hover{
+        background: #33222e;
+        color: #da5d31;
+    }
 
     //for tablets and desktops
     @media(min-width:576px){
@@ -25,11 +31,12 @@ export const DropdownContainer = styled.div`
 export const DropdownButton = styled.button`
     background:transparent;
     border: none;
-    color: red;
+    color: #F0A453;
     font-size: 0.8em;
     cursor: pointer;
-    &:focus{
+    &:focus, &:hover{
         outline:none;
+        color:#DA5D2A;
     }
 `
 
@@ -38,7 +45,7 @@ export const DropdownList = styled.div`
     background: #fff;
     top: 2em;
     left: 0;
-    width: 99%;
+    width: 100%;
     border-radius: 4px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -61,13 +68,13 @@ export const DropdownItem = styled.a`
     border-bottom: 1px solid #ccc;
     margin: 0 14px;
     text-transform: capitalize;
-    color: #1b1313;
+    color: #33222E;
 
     &:last-of-type{
         border-bottom: none;
     }
 
     &:hover{
-        color:red;
+        color:#F0A453;
     }
 `
