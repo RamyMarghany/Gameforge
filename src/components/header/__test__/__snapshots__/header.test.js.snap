@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshots 1`] = `
+<div
+  className="stylecss__HeaderContainer-sc-17bqppt-0 hUAtGD"
+  data-testid="header"
+>
+  <div
+    className="stylecss__HeaderWrapper-sc-17bqppt-1 gFUKaM"
+  >
+    <a
+      className="stylecss__Logo-sc-17bqppt-2 edXTst"
+    >
+      Gameforge
+    </a>
+    <div
+      className="stylecss__DropdownContainer-sc-5d7cru-0 enAiie Dropdown"
+      data-testid="dropdown"
+    >
+      <button
+        className="stylecss__DropdownButton-sc-5d7cru-1 uwfyr"
+        onClick={[Function]}
+      >
+        Settings
+      </button>
+      <div
+        className="stylecss__DropdownList-sc-5d7cru-2 fCNmcA dropdown-group"
+      >
+        <a
+          className="stylecss__DropdownItem-sc-5d7cru-3 eSRCjt"
+        >
+          Profile
+        </a>
+        <a
+          className="stylecss__DropdownItem-sc-5d7cru-3 eSRCjt"
+        >
+          settings
+        </a>
+        <a
+          className="stylecss__DropdownItem-sc-5d7cru-3 eSRCjt"
+        >
+          Log out
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

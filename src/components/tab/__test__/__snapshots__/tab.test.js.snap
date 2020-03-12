@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshots 1`] = `
+Array [
+  <div
+    className="stylecss__TabsButtonsWrapper-vczw1e-1 iGKTJa"
+  >
+    <button
+      className="stylecss__TabsButton-vczw1e-2 jrbmlw tab-btn btnActive"
+      onClick={[Function]}
+    >
+      Users
+    </button>
+    <button
+      className="stylecss__TabsButton-vczw1e-2 jrbmlw tab-btn"
+      onClick={[Function]}
+    >
+      Todos
+    </button>
+    <button
+      className="stylecss__TabsButton-vczw1e-2 jrbmlw tab-btn"
+      onClick={[Function]}
+    >
+      Posts
+    </button>
+  </div>,
+  <section
+    className="stylecss__TabContainer-vczw1e-0 hZbfXB tab-wrapper"
+  >
+    <div
+      className="stylecss__TabsContent-vczw1e-3 gfjuXg tabs-content"
+    >
+      <div
+        className="tab-active"
+      >
+        <div
+          className="stylecss__TabLayout-vczw1e-4 chNah"
+        >
+          <p
+            className="stylecss__Loading-vczw1e-5 jXIxLR"
+          >
+            Loading the all users...!
+          </p>
+        </div>
+      </div>
+      <div
+        className="tab"
+      >
+        <div
+          className="stylecss__TabLayout-vczw1e-4 chNah"
+        >
+          <p
+            className="stylecss__Loading-vczw1e-5 jXIxLR"
+          >
+            Loading the first 
+            <b>
+              20
+            </b>
+             todo items...!
+          </p>
+        </div>
+      </div>
+      <div
+        className="tab"
+      >
+        <div
+          className="stylecss__TabLayout-vczw1e-4 chNah"
+        >
+          <p
+            className="stylecss__Loading-vczw1e-5 jXIxLR"
+          >
+            Loading the first 
+            <b>
+              20
+            </b>
+             posts...!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>,
+]
+`;

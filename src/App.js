@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/header'
 import Wrapper from './components/layout'
 
-function App() {
+ const App = () => {
   return (
     <div className="App">
       <Header/>

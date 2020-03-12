@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshots 1`] = `
+<div
+  className="stylecss__CardContainer-sc-1ktc96q-0 dYBIaN"
+  data-testid="card"
+>
+  <p
+    className="stylecss__Info-sc-1ktc96q-1 ebXYvs"
+  >
+    <span
+      className="stylecss__MainInfo-sc-1ktc96q-2 jkjNTl"
+    >
+       
+    </span>
+  </p>
+  <p
+    className="stylecss__Info-sc-1ktc96q-1 ebXYvs"
+  >
+    <span
+      className="stylecss__MainInfo-sc-1ktc96q-2 jkjNTl"
+    />
+  </p>
+</div>
+`;

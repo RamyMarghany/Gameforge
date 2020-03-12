@@ -1,22 +1,23 @@
 import React, {useState} from 'react'
-import {DropdownContainer, DropdownButton, DropdownList, DropdownItem} from './style.css'
+import { DropdownContainer, DropdownButton, DropdownList, DropdownItem } from './style.css'
 
-const Dropdown = props =>{
+const Dropdown = () =>{
     const [isOpen, setIsOpen] = useState(false);
 
+    const toggleOpen = () => {
+        setIsOpen(!isOpen)
+    }
     return(
-        <DropdownContainer className="Dropdown">
+        <DropdownContainer className="Dropdown" data-testid='dropdown'>
             <DropdownButton
-                onClick={e => {
-                    setIsOpen(!isOpen);
-                }}
+                onClick={toggleOpen}
             >
-                settings
+                Settings
             </DropdownButton>
             <DropdownList className={isOpen ? "dropdown-group active" : "dropdown-group"}>
-                <DropdownItem href='#'>Profile</DropdownItem>
-                <DropdownItem href='#'>settings</DropdownItem>
-                <DropdownItem href='#'>Log out</DropdownItem>
+                <DropdownItem >Profile</DropdownItem>
+                <DropdownItem >settings</DropdownItem>
+                <DropdownItem >Log out</DropdownItem>
             </DropdownList>
       </DropdownContainer>
     )

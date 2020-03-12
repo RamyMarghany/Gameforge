@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshots 1`] = `
+<div
+  className="accordion-container"
+  data-testid="accordion"
+>
+  <div
+    className="stylecss__AccordionTitle-sc-1jkeuws-0 kZrPQQ accordion-title"
+    onClick={[Function]}
+  />
+  <div
+    className="stylecss__AccordionBody-sc-1jkeuws-1 drDpFH accordion-body"
+  />
+</div>
+`;

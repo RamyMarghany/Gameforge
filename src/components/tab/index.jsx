@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Tab from './tab';
 import Card from '../card'
 import FetchingData from '../../utility/fetching'
+import { APIConfig } from '../../config'
 import {
         TabContainer, 
         TabsButtonsWrapper, 
@@ -18,9 +19,9 @@ const TabController = () =>{
     const [posts, setPosts] = useState([]);
 
     useEffect(()=>{
-        FetchingData('https://jsonplaceholder.typicode.com/users', setUsers)
-        FetchingData('https://jsonplaceholder.typicode.com/todos', setTodos)
-        FetchingData('https://jsonplaceholder.typicode.com/posts', setPosts)    
+        FetchingData(APIConfig.USERS_URL, setUsers)
+        FetchingData(APIConfig.TODOS_URL, setTodos)
+        FetchingData(APIConfig.POSTS_URL, setPosts)    
     },[])
 
     const checkIfCurrent = tabID => (currentTab === tabID ? true : false);

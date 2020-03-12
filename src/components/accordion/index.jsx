@@ -5,7 +5,7 @@ const Accordion = (props) =>{
     const [open, setOpen] = useState(false);
     
     return(
-        <div className="accordion-container">
+        <div className="accordion-container" data-testid='accordion'>
             <AccordionTitle className={open ? "accordion-title expanded" : "accordion-title"} onClick={e=>setOpen(!open)}>{props.title}</AccordionTitle>
             <AccordionBody className={open ? "accordion-body active" : "accordion-body"}>{props.body}</AccordionBody>
         </div>
